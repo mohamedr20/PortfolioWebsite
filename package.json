@@ -1,49 +1,25 @@
 {
-  "name": "portfoliowebsite",
-  "version": "1.0.0",
-  "description": "Portfolio Website to showcase what I can do",
-  "main": "index.js",
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "2.0.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:watch": "webpack --watch",
-    "build": "webpack"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mohamedr20/PortfolioWebsite.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [
-    "JS",
-    "HTML",
-    "CSS",
-    "SASS"
-  ],
-  "author": "Mohamed Isse",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mohamedr20/PortfolioWebsite/issues"
-  },
-  "homepage": "https://github.com/mohamedr20/PortfolioWebsite#readme",
-  "devDependencies": {
-    "autoprefixer": "^8.5.0",
-    "babel-loader": "^7.1.4",
-    "browser-sync": "^2.24.4",
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.9.0",
-    "postcss-loader": "^2.1.5",
-    "sass-loader": "^7.0.1",
-    "style-loader": "^0.21.0",
-    "file-loader": "^2.0.0",
-    "html-loader": "^0.5.5",
-    "webpack": "^4.20.2",
-    "webpack-cli": "*3.1.1",
-    "webpack-dev-server": "^3.1.9",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0"
-  },
-  "dependencies": {}
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

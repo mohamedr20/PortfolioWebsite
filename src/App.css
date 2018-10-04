@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#nav_bar{
+  background: #181818;
+  width:60px;
+  height:100%;
+  position:absolute;
+  top:0;
+  z-index:3;
+  min-height:500px;
+}
+
+@media(max-width:960px){
+  #nav_bar{
+    width:100%;
+    height:60px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:3;
+    min-height:0;
+  }
+}
+
+
+
+
+
+#nav_bar nav{
+  display:block;
+  text-align: center;
+  position: absolute;
+  height:210px;
+  top:50%;
+  margin-top:-120px;
+  width:100%;
+}
+#nav_bar ul{
+  position:absolute;
+  bottom:40px;
+  width:100%;
+  display:block;
+  padding:0;
+  list-style:none;
+  text-align: center;
+  margin:0;
+}
+
+#nav_bar i:hover{
+  color:#08FDD2;
+}
+
+#nav_bar ul li a {
+  padding:7px 0;
+  display:block;
+  font-size:15px;
+  line-height:16px;
+  color:#4d4d4e;
+}
+
+@media(max-width:960px){
+  #nav_bar nav{
+    width:45%;
+    position:absolute;
+    left:30%;
+    margin-left:-19px;
+    float:left;
+    overflow: hidden;
+    text-align: center;
+    height:60px;
+    top:0;
+    margin-top:0;
+  }
+  #nav_bar ul{
+    position:static;
+    bottom:20px;
+    width:auto;
+    height:50px;
+    line-height:60px;
+    display:block;
+    padding:0;
+    list-style:none;
+    text-align: center;
+    margin:16px;
+    float:right;
+  }
+}
+  
+#nav_bar nav a{
+  font-size:22px;
+  columns: #4d4d4e;
+  display: block;
+  line-height:5px;
+  height:51px;
+  position:relative;
+  text-decoration:none;
+}
+
+@media(max-width:960px){
+  #nav_bar nav a{
+    float:left;
+    margin-left:14%;
+    line-height:60px;
+    height:60px;
+  }
+  #nav_bar ul li{
+    float:right;
+    height:60px;
+    line-height:60px;
+    margin:0 10px;
+  }
+}
+a{
+  background-color:transparent;
+}
+#nav_bar i{
+  color:#4d4d4e;
+}
+
+
+.container{
+  width:100%;
+  will-change: contents;
+  height:90%;
+  min-height:566px;
+  position:absolute;
+  top:5%;
+  margin:0 auto;
+  z-index:1;
+  transform-style: preserve-3d;
+}
+#page{
+  width:100%;
+  height:100%;
+  position: absolute;
+  background-color:#252627;
+}
+
+.home-page .text-zone{
+  position:absolute;
+  left:10%;
+  right:50%;
+  width:40%;
+  max-height:90%;
+}
+.home-page .picture-zone{
+  position:absolute;
+  top:30%;
+  left:50%;
+  right:50%;
+  width:40%;
+  max-height:90%;
+}
+.picture-zone{
+  margin-left:-15px;
+}
+.picture-zone i{
+  font-size:150px;
+  color:#08FDD2;
+  margin-left:40px;
+}
+.picture-zone .fa-react{
+  animation:App-logo-spin infinite 20s linear;
+}
+.home-text{
+  color:#ffffff;
+  line-height:53px;
+  margin:0;
+  font-family:'Roboto';
+  font-size:45px;
+  font-weight: 700;
+  margin-top:160px;
+  text-align: left;
+}
+
+.text-zone h2{
+  color:#8d8d8d;
+  margin-top:8px;
+  text-align:left;
+  font-size:16px;
+  font-weight:400;
+  font-family: 'Roboto';
+  letter-spacing: 3px;
+}
+.text-zone h2:hover{
+  -webkit-animation: pulse 3s;
+  animation:pulse 3s;
+}
+
+.contact-button{
+color:#08FDD2;
+font-size:11px;
+letter-spacing: 4px;
+font-family: 'Roboto';
+text-decoration: none;
+padding:12px 16px;
+border:1px solid #08FDD2;
+margin-top:16px;
+float:left;
+white-space: nowrap;
+border-radius:3px;
+}
+.contact-button:hover{
+  background-color:#08FDD2;
+  color:#ffffff;
+}
