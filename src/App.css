@@ -6,7 +6,7 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  /* height: 40vmin; */
 }
 
 .App-header {
@@ -128,6 +128,11 @@
   position:relative;
   text-decoration:none;
 }
+#nav_bar i:hover:after{
+  display:none;
+  content:attr(data-hover);
+}
+
 
 @media(max-width:960px){
   #nav_bar nav a{
@@ -150,77 +155,88 @@ a{
   color:#4d4d4e;
 }
 
+.container-fluid{
+  overflow:hidden;
+  height:100vh;
+  background:#252627;
+}
+.description{
+  background:#252627;
+  color:white;
+}
+.welcome-text{
+margin-left:120px;
+margin-top:200px;
+}
 
-.container{
-  width:100%;
-  will-change: contents;
-  height:90%;
-  min-height:566px;
-  position:absolute;
-  top:5%;
-  margin:0 auto;
-  z-index:1;
-  transform-style: preserve-3d;
+.logo-container{
+  margin-right:60px;
+}
+.logo-container i{
+  color:#08FDD2;
+  font-size:170px;
+  margin-top:200px;
+  margin-left:40px;
 }
 #page{
   width:100%;
   height:100%;
   position: absolute;
-  background-color:#252627;
+  background-color:#252627; 
+  border:1px solid red;
 }
 
-.home-page .text-zone{
-  position:absolute;
-  left:10%;
-  right:50%;
-  width:40%;
-  max-height:90%;
-}
-.home-page .picture-zone{
-  position:absolute;
-  top:30%;
-  left:50%;
-  right:50%;
-  width:40%;
-  max-height:90%;
-}
 .picture-zone{
-  margin-left:-15px;
+  margin-left:10px;
+  background-color:#ffffff;
 }
-.picture-zone i{
-  font-size:150px;
-  color:#08FDD2;
-  margin-left:40px;
+.picture-zone img{
+width:100%;
+height:100%;
+border:1px solid red;
 }
 .picture-zone .fa-react{
   animation:App-logo-spin infinite 20s linear;
 }
-.home-text{
+.welcome-text h1{
   color:#ffffff;
   line-height:53px;
-  margin:0;
   font-family:'Roboto';
-  font-size:45px;
+  font-size: 3.1em;
   font-weight: 700;
-  margin-top:160px;
   text-align: left;
 }
 
-.text-zone h2{
+.welcome-header{
   color:#8d8d8d;
   margin-top:8px;
   text-align:left;
   font-size:16px;
   font-weight:400;
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
   letter-spacing: 3px;
 }
-.text-zone h2:hover{
-  -webkit-animation: pulse 3s;
-  animation:pulse 3s;
+
+.about-header{
+  color:#a8a8a8;
+  margin-top:8px;
+  text-align:left;
+  font-size:24px;
+  font-weight:400;
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: 3px;
+  animation:none;
+}
+.welcome-text h4{
+  color:white;
+  line-height:20px;
+  font-family: 'Roboto';
+  font-size:16px;
+  text-align:left;
 }
 
-.contact-button{
+
+.contact-btn{
 color:#08FDD2;
 font-size:11px;
 letter-spacing: 4px;
@@ -233,7 +249,54 @@ float:left;
 white-space: nowrap;
 border-radius:3px;
 }
-.contact-button:hover{
+.contact-btn:hover{
   background-color:#08FDD2;
   color:#ffffff;
 }
+
+.frame {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+  width: 322px;
+  height: 242px;
+  border: 1px solid #f6f4f3;
+  border-top-color: #fff;
+  border-radius: 3px;
+  background-color: #ebe8e5;
+  padding:18px;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.15);
+}
+
+.frame:after {
+  position: absolute;
+  z-index: 10;
+  left: 18px;
+  top: 18px;
+  content: "";
+  width: 320px;
+  height: 240px;
+  box-shadow: inset 1px 0 3px 2px rgba(0,0,0,.4);
+}
+
+.frame img {
+  border: 1px solid #f2f0ee;
+  border-bottom-color: #fff;
+  background: #fff;
+}
+
+.img-fluid{
+  background:transparent;
+  border-radius:1%;
+  margin-top:170px;
+  border-radius: 1px;
+  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);    
+}
+
+.form-container{
+  margin-top:0px;
+  border:1px solid red;
+}
+
