@@ -1,4 +1,6 @@
 import React,{Component} from 'react';
+import {Link} from 'react-router-dom';
+
 import Particles from 'react-particles-js';
 class Home extends React.Component{
     render(){
@@ -15,7 +17,9 @@ class Home extends React.Component{
                 web developer.
               </h1>
               <h2 className="welcome-header">Front End Developer / React / Angular</h2>
+              <Link to="/contact">
               <button type="button" className="btn contact-btn btn-outline-dark">Contact Me</button>
+              </Link>
             </div>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6">

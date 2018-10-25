@@ -31,7 +31,9 @@ class About extends React.Component{
             </div>
               </div>
               <div className="col-lg-6">
+                <div className="img-container">
                 <img className="img-fluid" src={ProfilePic} alt=""/>
+                </div>
               </div>
               </div>
               </div>

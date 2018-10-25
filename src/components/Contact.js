@@ -1,55 +1,47 @@
 import React,{Component} from 'react';
-import {Col,Form,FormGroup,Label,Input,Button} from 'reactstrap'
+import Particles from 'react-particles-js';
+
+const particleOptions = {
+    particles:{
+        number:{
+            value:150,
+            density:{enable:true,value_area:800}
+        }
+    }
+}
 class Contact extends React.Component{
     state  = {
-        word:'Contact'
+        email:'',
+        message:'',
+        name:''
     }
+
+
     render(){
         return(
-        <div className="container-fluid">
-            <div className="wrap-contact100">
-                <form className="contact100-form validate-form">
-
-                <span class="contact100-form-title">
-					Contact Us
-				</span>
-				<div class="wrap-input100 validate-input" data-validate="Name is required">
-					<input class="input100" type="text" name="name" placeholder="Full Name"/>
-					<span class="focus-input100-1"></span>
-					<span class="focus-input100-2"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input class="input100" type="text" name="email" placeholder="Email"/>
-					<span class="focus-input100-1"></span>
-					<span class="focus-input100-2"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<textarea class="input100" name="message" placeholder="Your Message"></textarea>
-					<span class="focus-input100-1"></span>
-					<span class="focus-input100-2"></span>
-				</div>
-
-                <div class="contact100-form-checkbox">
-					<input class="input-checkbox100" id="ckb1" type="checkbox" name="copy-mail"/>
-					<label class="label-checkbox100" for="ckb1">
-						Send copy to my-email
-					</label>
-				</div>
-
-				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
-						Send Email
-					</button>
-				</div>
-                
-                </form>
-            </div>
-        </div>
+    <div className="container-fluid">
+        <div class="form-container">
+            <form id="contact" action="https://formspree.io/mohamedr201@gmail.com" method="POST">
+              <h3>Contact Me</h3>
+              <fieldset>
+                <input name="name" placeholder="Your name" type="text" tabindex="1" required autofocus/>
+              </fieldset>
+              <fieldset>
+                <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required/>
+              </fieldset>
+              <fieldset>
+                <textarea name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+    </div>
 
         )
     }
 }
 
 export default Contact;
+

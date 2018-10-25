@@ -4,10 +4,10 @@ import Nav from './components/layout/Nav';
 import Home from './components/Home';
 import Skills from './components/Skills';
 import About from './components/About';
-import Contact from './components/Contact';
+import ContactForm from './components/Contact';
 import Work from './components/Work';
 
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {
@@ -19,7 +19,7 @@ class App extends Component {
         <Route exact path='/about' component={About}></Route>
         <Route exact path='/work' component={Work}></Route>
         <Route exact path='/skills' component={Skills}></Route>
-        <Route exact path='/contact' component={Contact}></Route>
+        <Route exact path='/contact' component={ContactForm}></Route>
       </div>
     </Router>
 
